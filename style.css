@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body{
     margin: 0;
     padding: 10px;
     font-family: "Poppins", sans-serif;
-    background-color: #f0f0f0;
+    background-color: #fafafa;
 }
 
 
 header{
     display: flex;
     justify-content: start;
-    background-color: #ffffff;
+    background-color: #ffffff00;
     color: rgb(0, 0, 0);
 }
 img{
@@ -21,9 +21,19 @@ img{
     padding: 5px;
 }
 
+.div-principal{
+    display: grid;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 60px;
+    text-align: left;
+}
+
 .texto-header{
-    margin-top: 22px;
+    margin-top: 20px;
     margin-left: 10px;
+    font-weight: 200px;
 }
 
 .btn-persona{
@@ -34,4 +44,20 @@ img{
     border-radius: 15px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+.titulo-h2{
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+.titulo-h1{
+    font-weight: 700;
+    font-size: 150px;
+    margin: 0;
+}
+
+.info, .botones{
+    text-align: center;
 }
