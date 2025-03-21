@@ -4,48 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información Personal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <style>
-        body{
-    margin: 0;
-    padding: 10px;
-    font-family: "Poppins", sans-serif;
-    background-color: #fafafa;
-}
-
-        .image {
-            margin-right: 20px;
-        }
-        .info {
-            max-width: 600px;
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            background-color: #fafafa;
         }
 
-        header{
+        body {
             display: flex;
-            justify-content: start;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             background-color: #ffffff00;
             color: rgb(0, 0, 0);
+            border-bottom: 0.5px solid #000000;
+            padding: 10px 0;
+            margin-bottom: 20px;
         }
-        .texto-header{
+
+        .header-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .texto-header {
             margin-top: 20px;
             margin-left: 10px;
             font-weight: 200px;
+            font-family: "Poppins", sans-serif;
         }
 
+        .img-header {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            padding: 5px;
+        }
+
+        .polaroidContenedor {
+            width: 250px;
+            padding: 10px;
+            border: 1px solid #BFBFBF;
+            background-color: white;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.8);
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .textoPolaroid {
+            display: block;
+            margin-top: 1em;
+            text-align: center;
+            font-style: italic;
+            font-family: "Shadows Into Light", cursive;
+        }
+
+        .RotarDer {
+            transform:rotate(-10deg);
+            -ms-transform:rotate(-10deg); /* IE9 */
+            -webkit-transform:rotate(-10deg); /* Safari y Chrome */
+            -moz-transform:rotate(-10deg); 
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: underline;
+            color: black;
+        }
+
+        nav ul li a:hover {
+            color: #352070;
+        }
+
+        .polaroid-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info{
+            max-width: 600px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 20px;
+        }
+
+        .yo-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+
+        p{
+            font-family: "Shadows Into Light", cursive;
+            font-size: large;
+        }
+
+        .botones{
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+            margin: 5px;
+        }
+
+        .redes{
+            background-color: #337020;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .redes :hover{
+            background-color: #0f440a;
+        }
+
+        .redes a{
+            text-decoration: none;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="image.png" alt="" class="">
-            <p class="texto-header">Grupo 2</p>
+            <div class="header-left">
+                <img src="image.png" alt="" class="img-header">
+                <p class="texto-header">Grupo 2</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Valen</a></li>
+                    <li><a href="">Facu</a></li>
+                    <li><a href="">Fede</a></li>
+                    <li><a href="">Delfi</a></li>
+                    <li><a href="">Pedro</a></li>
+                    <li><a href="">Agustin</a></li>
+                </ul>
+            </nav>
         </header>
-        <div class="image">
-            <img src="WhatsApp Image 2025-03-20 at 14.04.20.jpeg" alt="Foto de la persona" width="200">
+        <div class="yo-div">
+        <div class="polaroidContenedor RotarDer">
+            <img src="WhatsApp Image 2025-03-20 at 14.04.20.jpeg" alt="Imagen Polaroid con CSS" width="200" class="polaroid-img">
+            <span class="textoPolaroid">:3</span>
         </div>
         <div class="info">
             <h1>Hola, soy Valentina</h1>
-            <p>Descripción breve sobre la persona. Aquí puedes incluir información como su profesión, intereses, logros, etc.</p>
+            <p>Generalmente me llaman "Valen" o "Vale". Me encanta la música, todo lo relacionado al arte y dormir mucho la siesta. Toco la guitarra, bailo danzas y urbanas y recientemente empecé a jugar al tenis. Cuando termine el secundario voy a estudiar Lic. en Ciencias de la Computación en Córdoba.</p>
+            <div class="botones">
+            <button class="redes" ><a href="https://www.instagram.com/valencardtti/">Instagram</a></button>
+            <button class="redes"><a href="https://open.spotify.com/user/d5tih6jvzu5n2rvilc7n2x4sv?si=779e421ee9ba4216">Spotify</a></button>
+            </div>
         </div>
+    </div>
     </div>
 </body>
 </html>
